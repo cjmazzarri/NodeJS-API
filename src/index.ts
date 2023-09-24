@@ -27,3 +27,4 @@ const MONGO_URL = 'mongodb+srv://'+process.env.MONGO_USER+':'+process.env.MONGO_
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URL);
 mongoose.connection.on('error', (error: Error) => console.log(error))
+
